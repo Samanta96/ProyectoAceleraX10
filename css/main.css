@@ -1,0 +1,47 @@
+#encabezado{
+ background-size: contain;
+ background-repeat: no-repeat;
+  margin: 0%;
+  width: 100vh;
+  height: 100%;
+}
+
+.subtitulos1{
+font-family: 'PF Regal Display Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 45px;
+align-items: center;
+color: #DF991B;
+}
+
+.subtitulos2{
+position: absolute;
+font-family: 'PF Regal Display Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 60px;
+align-items: center;
+color: #000000;
+}
+
+.click{
+font-family: 'Brandon Grotesque';
+font-style: normal;
+font-weight: 390;
+font-size: 25px;
+line-height: 45px;
+align-items: center;
+color: #DF991B;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+.vap{
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
