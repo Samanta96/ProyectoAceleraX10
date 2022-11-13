@@ -1,4 +1,3 @@
-
 #encabezado{
   display: grid;
   margin: 0%;
@@ -8,85 +7,85 @@
   background-repeat: no-repeat;
   background-position: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-rows: auto;
   height: 100vh;
   width: 100vw;
 } 
-
   .head_top{
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    width: 100vw;
-    gap: 10px 10px;
-    padding: 1%;
+    grid-template-columns: 2fr 1fr 0.2fr;
     align-items: center;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+    height: 50px;
   }
 
     .head_top #logo-letra{
       grid-column: 1/2;
       position: relative;
+      height: 60%;
       left:8% ;
-      top:8%;  
+      top:10%;  
     }
-      #uniq,#luxury{
-        height: 25px;
-        width: 89px
+      #uniq{
+        height: 35%;
+        width: 10%;
+      }
+      #luxury{
+        height: 35%;
+        width: 12%;
       }
 
     .head_top #sesion{
       grid-column: 2/3;
+      position: relative;
       display: flex;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
-      height: 23px;     
+      bottom: 5%; 
+      right: 18%
     }
-      #login{
+      #login , #sigin{
+        position: relative;
         font-family: 'Brandon Grotesque';
         font-style: normal;
-        /*font-weight: 390;*/
-        font-size: 23px;
-        /*line-height: 45px;
-        /* or 225% */
-        color: #7E7E7E;
-        padding: 2%;
+        font-size: 90%;
+        padding: 5px;
+     
+      }
+      #login {
+        color: #484545;
         }
       #sigin{
-        font-family: 'Brandon Grotesque';
-        font-style: normal;
-        /*font-weight: 390;*/
-        font-size: 23px;
-        /*line-height: 45px;
-        /* or 225% */
-        padding: 2%;
         color: #FFFFFF;
-        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255,0.5);
       }
 
     .head_top #menu{
       grid-column: 3/4;
-      height: 23px;
-      width: 100%;
+      height: 55%;
       position: relative;
-      border-left: 1px solid rgba(255, 255, 255,0.5); 
-      /*align-items: center;
-      justify-content: center;*/   
+      border-left: 1px solid rgba(255, 255, 255,0.5);
+      display: flex; 
+      align-items: center;
+      justify-content: center; 
     }
       #img_menu{
-        position: relative;
-        left: 15%;
-
+        height:70%;
       }
 
+
   .search{
-    grid-row: 2/3;
-    grid-column: 3/4;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
   }
   #caja_texto {
+    grid-column: 2/3;
     border-radius: 10px;
     border: 1px solid white;
     background-color: transparent;
-    color: white; 
+    color: white;
+    height: 25px;
+    width: 59px;
   }
 
 
