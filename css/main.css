@@ -6,11 +6,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 0.5fr 0.5fr 1fr auto;
   height: 100vh;
   width: 100vw;
 } 
+
   .head_top{
     display: grid;
     grid-template-columns: 2fr 1fr 0.2fr;
@@ -18,7 +19,6 @@
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
     height: 50px;
   }
-
     .head_top #logo-letra{
       grid-column: 1/2;
       position: relative;
@@ -26,40 +26,36 @@
       left:8% ;
       top:10%;  
     }
-      #uniq{
-        height: 35%;
-        width: 10%;
-      }
-      #luxury{
-        height: 35%;
-        width: 12%;
-      }
-
+      #uniq,#luxury {
+        height: fit-content;
+        width: fit-content;
+      }    
     .head_top #sesion{
-      grid-column: 2/3;
-      position: relative;
       display: flex;
-      justify-content: end;
+      justify-content: center;
       align-items: center;
-      bottom: 5%; 
-      right: 18%
     }
-      #login , #sigin{
-        position: relative;
-        font-family: 'Brandon Grotesque';
-        font-style: normal;
-        font-size: 90%;
-        padding: 5px;
-     
+      #sesion_conteiner{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: fit-content;
+        margin: 0 75px;
       }
-      #login {
-        color: #484545;
+        #login , #sigin{
+          font-family: 'brandon-grotesque';
+          font-style: normal;
+          font-weight: 390;
+          font-size: 16px;
+          line-height: 16px;
+          padding-left: 15px;
         }
-      #sigin{
-        color: #FFFFFF;
-        border-left: 1px solid rgba(255, 255, 255,0.5);
-      }
-
+        #login {
+          color: #484545;
+          }
+        #sigin{
+          color: #FFFFFF;
+          border-left: 1px solid rgba(255, 255, 255,0.5);
+        }
     .head_top #menu{
       grid-column: 3/4;
       height: 55%;
@@ -73,24 +69,26 @@
         height:70%;
       }
 
-
   .search{
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 4fr 2fr 0.3fr ;
+    padding: 3% 0% 1% 0%
   }
-  #caja_texto {
-    grid-column: 2/3;
-    border-radius: 10px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    height: 25px;
-    width: 59px;
-  }
-
+    #caja_texto {
+    border: 1px solid #FFFFFF;
+      border-radius: 80px;
+      font-family: brandon-grotesque;
+      font-style: normal;
+      font-size: 20px;
+      color: #FFFFFF;
+      background: none;
+      min-width: 20vw;
+      grid-column: 2/3;
+    
+    }
 
   .titulos_enabezado{
-    grid-row: 3/4;
+    grid-row: 4/5;
     grid-column: 1/2;
   }
     #titulo1{
