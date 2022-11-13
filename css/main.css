@@ -72,19 +72,29 @@
   .search{
     display:grid;
     grid-template-columns: 4fr 2fr 0.3fr ;
+    grid-template-rows: 1fr;
     padding: 3% 0% 1% 0%
   }
     #caja_texto {
-    border: 1px solid #FFFFFF;
+      grid-column: 2/3; 
+      grid-row: 1/2;
+      border: 1px solid #FFFFFF;
       border-radius: 80px;
-      font-family: brandon-grotesque;
+      font-family: 'brandon-grotesque';
       font-style: normal;
       font-size: 20px;
-      color: #FFFFFF;
+      color: #fcf9f9;
       background: none;
+      box-sizing: border-box;
       min-width: 20vw;
-      grid-column: 2/3;
     
+    }
+    #lupa{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      position: relative;
+      left: 90%;
+      top: 20%;
     }
 
   .titulos_enabezado{
