@@ -7,11 +7,10 @@
   background-repeat: no-repeat;
   background-position: center;
   grid-template-columns: 1fr ;
-  grid-template-rows: 0.5fr 0.5fr 1fr auto;
+  grid-template-rows: 0.5fr 0.5fr 3fr;
   height: 100vh;
   width: 100vw;
 } 
-
   .head_top{
     display: grid;
     grid-template-columns: 2fr 1fr 0.2fr;
@@ -46,15 +45,15 @@
           font-style: normal;
           font-weight: 390;
           font-size: 16px;
-          line-height: 16px;
-          padding-left: 15px;
         }
         #login {
           color: #484545;
+          padding-right:10px;
           }
         #sigin{
           color: #FFFFFF;
           border-left: 1px solid rgba(255, 255, 255,0.5);
+          padding-left: 15px;
         }
     .head_top #menu{
       grid-column: 3/4;
@@ -64,6 +63,7 @@
       display: flex; 
       align-items: center;
       justify-content: center; 
+      padding-right:30%;
     }
       #img_menu{
         height:70%;
@@ -71,9 +71,10 @@
 
   .search{
     display:grid;
-    grid-template-columns: 4fr 2fr 0.3fr ;
+    grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr;
-    padding: 3% 0% 1% 0%
+    padding: 0% 0% 4% 0%;
+    margin-top: 0%
   }
     #caja_texto {
       grid-column: 2/3; 
@@ -82,33 +83,39 @@
       border-radius: 80px;
       font-family: 'brandon-grotesque';
       font-style: normal;
-      font-size: 20px;
+      font-size: fit-content;
       color: #fcf9f9;
       background: none;
-      box-sizing: border-box;
-      min-width: 20vw;
-    
+      margin-left:20%;
+      margin-right:10%;
+      justify-content: center;
+      align-items: center;
     }
     #lupa{
       grid-column: 2/3;
       grid-row: 1/2;
       position: relative;
-      left: 90%;
-      top: 20%;
+      left: 85%;
+      top: 10%;
+      height: 70%; 
     }
 
-  .titulos_enabezado{
-    grid-row: 4/5;
-    grid-column: 1/2;
+  .titulos_encabezado{                                             
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 0.1fr 0.3fr 1fr;
   }
     #titulo1{
       font-family: 'PF Regal Display Pro';
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
-      line-height: 45px;
-      align-items: center;
       color: #B4B7B7;
+      grid-row:1/2;
+      margin-left:5%;
+      margin-bottom:2%;
+      height: fit-content;
+      width: fit-content;
     }
     #titulo2{
       font-family: 'PF Regal Display Pro';
@@ -116,13 +123,43 @@
       font-weight: 500;
       font-size: 80px;
       line-height: 45px;
-      /* or 56% */
-      align-items: center;
-
       color: #FFFFFF;
+      height: fit-content ;
+      width: fit-content;
+      grid-row:2/3;
+      margin-left:5%;
+      margin-top:0%;
+      margin-bottom:0%;
     }
+    #enlace_head{
+      grid-column:1/2;
+      margin-left:5%;
+      display: grid;
+      grid-template-columns: 1fr, 1fr;
+      grid-template-rows:1fr   
+      }
+      .vap{
+        grid-column:1/2;
+        grid-row:1/2;
+        border-radius: 80px;
+        border: 1px solid white;
+        opacity: 1; 
+        color: white;
+        height: fit-content;
+        width: fit-content;
+        font-size:x-large ;
+        font-weight: normal;
+        padding: 1% 8%;  
+      }
+      #flecha_head{
+      grid-column: 1/2;
+      grid-row:1/2;
+      position:relative;
+      top:5%;
+      left:2.5%;
+      }
 
-
+      
 .subtitulos1{
   font-family: 'PF Regal Display Pro';
   font-style: normal;
@@ -152,12 +189,4 @@ font-size: 25px;
 line-height: 45px;
 align-items: center;
 color: #DF991B;
-}
-
-
-.vap{
-  border-radius: 10px;
-  border: 1px solid white;
-  opacity: 1; 
-  color: white;
 }
