@@ -159,14 +159,49 @@
         left:2.5%;
       }
 
+    #content{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+      #Worldwide_gallery{
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top:5%;
+      }
+        .galeria{
+            display: flex;
+            width:max-content;  
+        }
+           .img-wg{
+              padding:25% 25% 0% 25%;
+              margin:2%;
+              display:flex
+            }
+            #img-wg1{
+              background-image: url(../img/sale.jpg);
+            } 
+            #img-wg2{
+              background-image: url(../img/England_sale.png);
+            } 
+            #img-wg3{
+              background-image: url(../img/Marseilles_sale.jpg);
+            }
 
-#Worldwide_gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    #Worldwide_gallery2{
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top:5%;
+    }        
+#Luxury-properties{
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top:5%;
 }
-    
-
-      
+     
 .subtitulos1{
   font-family: 'PF Regal Display Pro';
   font-style: normal;
