@@ -152,12 +152,19 @@
         padding: 1% 8%;  
       }
       #flecha_head{
-      grid-column: 1/2;
-      grid-row:1/2;
-      position:relative;
-      top:5%;
-      left:2.5%;
+        grid-column: 1/2;
+        grid-row:1/2;
+        position:relative;
+        top:5%;
+        left:2.5%;
       }
+
+
+#Worldwide_gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+    
 
       
 .subtitulos1{
