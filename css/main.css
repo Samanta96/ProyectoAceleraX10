@@ -159,74 +159,85 @@
         left:2.5%;
       }
 
-    #content{
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-    }
-      #Worldwide_gallery{
-        grid-row: 1/2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top:5%;
-      }
-        .galeria{
-            display: flex;
-            width:max-content;  
-        }
-           .img-wg{
-              padding:25% 25% 0% 25%;
-              margin:2%;
-            }
-            #img-wg1{
-              background-image: url(../img/sale.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            } 
-            #img-wg2{
-              background-image: url(../img/England_sale.png);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            } 
-            #img-wg3{
-              background-image: url(../img/Marseilles_sale.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }
-            #img-wg4{
-              background-image: url(..//img/carcassomme-rent.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }
-            #img-wg5{
-              background-image: url(..//img/munich-rent.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }
-            #img-wg6{
-              background-image: url(..//img/italia-rent.jpg);
-              background-size: cover;
-              background-repeat: no-repeat;
-              background-position: center;
-            }
 
+      #content{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+      }
+        #Worldwide_gallery{
+          grid-row: 1/2;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-top:2%;
+        }
+          .galeria{
+              display: flex;
+              width:min-content;    
+          }
+             .img-wg{
+                padding:60% 35% 0% 5%;
+                margin-right: 3.5%;
+               
+              }
+            /*  .text-galeria{
+        
+              }*/
+  
+              #img-wg1{
+                background-image: url(../img/sale.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height:100px;
+              } 
+              #img-wg2{
+                background-image: url(../img/England_sale.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height:100px;
+              } 
+              #img-wg3{
+                background-image: url(../img/Marseilles_sale.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height:100px;
+              }
+              #img-wg4{
+                background-image: url(..//img/carcassomme-rent.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height:100px;
+              }
+              #img-wg5{
+                background-image: url(..//img/munich-rent.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height:100px;
+              }
+              #img-wg6{
+                background-image: url(..//img/italia-rent.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height:100px;
+              }
     #Worldwide_gallery2{
       grid-row: 2/3;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-top:5%;
+      margin-top:2%;
     } 
 
     #Luxury-properties{
       grid-row: 3/4;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
-      margin-top:5%;
+ 
     }
     
       .galeria-lp{
@@ -284,10 +295,6 @@
         background-repeat: no-repeat;
         background-position: center;
       }
-
-
-
-
 
     #services{
       grid-row: 4/5;
