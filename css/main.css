@@ -161,7 +161,7 @@
 
     #content{
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr;
     }
       #Worldwide_gallery{
@@ -177,16 +177,42 @@
            .img-wg{
               padding:25% 25% 0% 25%;
               margin:2%;
-              display:flex
             }
             #img-wg1{
               background-image: url(../img/sale.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
             } 
             #img-wg2{
               background-image: url(../img/England_sale.png);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
             } 
             #img-wg3{
               background-image: url(../img/Marseilles_sale.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            #img-wg4{
+              background-image: url(..//img/carcassomme-rent.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            #img-wg5{
+              background-image: url(..//img/munich-rent.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+            #img-wg6{
+              background-image: url(..//img/italia-rent.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
             }
 
     #Worldwide_gallery2{
@@ -194,13 +220,78 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-top:5%;
-    }        
-#Luxury-properties{
+    } 
+
+    #Luxury-properties{
+      grid-row: 3/4;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-top:5%;
+    }
+    
+      .galeria-lp{
         grid-row: 3/4;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top:5%;
-}
+        width:max-content;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);   
+      }
+      #img-lp1{
+        background-image: url(../img/surfside.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      } 
+      #img-lp2{
+        background-image: url(../img/vero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      } 
+      #img-lp3{
+        background-image: url(../img/bahama.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #img-lp4{
+        background-image: url(..//img/brickell.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #img-lp5{
+        background-image: url(..//img/coral.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #img-lp6{
+        background-image: url(..//img/miami.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #img-lp7{
+        background-image: url(..//img/Developments-quebec.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #img-lp8{
+        background-image: url(..//img/Developments.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+
+
+
+
+    #services{
+      grid-row: 4/5;
+    }
      
 .subtitulos1{
   font-family: 'PF Regal Display Pro';
