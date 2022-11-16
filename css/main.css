@@ -317,7 +317,6 @@
             background-position-y:10%;
             background-color: #FFFFFF;
             } 
-
     .wg-content2{
       grid-column: 1/2;
       text-align: left;
@@ -333,36 +332,23 @@
     .click-container2{
      display: grid;
     }
-    .click{
-    font-family: 'Brandon Grotesque';
-    font-style: normal;
-    font-size: 25px;
-    align-items: center;
-    justify-content:center;
-    text-align:center;
-    color: black;
-    border-radius: 80px;;
-    border: 1px solid rgb(6, 0, 0);
-    padding: 0% 5% 0% 5%;
-    }
-/*
-    .click-container:hover .click{
+
+    .click-container2:hover .click{
       background-color: #000000;
       color: rgb(252, 248, 248);
     }
 
-    .prev,.next{
+    .prev2,.next2{
       display:flex;
-      padding-left:30%
     }
-      #prev-text{
-        padding-top:7%
+      #prev2-text{
+        padding-top:5%
       }
-      #next-text{
-        padding-top:7%;
+      #next2-text{
+        padding-top:6%;
         padding-left:38%;
         color: #df991b;
-      }*/
+      }
 
      .info2{
       font-family: 'brandon-grotesque';
