@@ -68,7 +68,6 @@
       #img_menu{
         height:70%;
       }
-
   .search{
     display:grid;
     grid-template-columns: 1fr 1fr ;
@@ -160,78 +159,154 @@
       }
 
 
-      #content{
+#content{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
+}   
+  #Worldwide_gallery{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:2%;
+  }
+    .galeria{
         display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr;
-      }
-        #Worldwide_gallery{
-          grid-row: 1/2;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          margin-top:2%;
-        }
-          .galeria{
-              display: flex;
-              width:min-content;    
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr;
+        width:100%;    
+    }
+      .img-wg{
+            display: grid;
+            align-items: end;
+            margin-right: 3%;   
           }
-             .img-wg{
-                padding:60% 35% 0% 5%;
-                margin-right: 3.5%;
-               
-              }
-            /*  .text-galeria{
-        
-              }*/
-  
-              #img-wg1{
-                background-image: url(../img/sale.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height:100px;
-              } 
-              #img-wg2{
-                background-image: url(../img/England_sale.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height:100px;
-              } 
-              #img-wg3{
-                background-image: url(../img/Marseilles_sale.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height:100px;
-              }
-              #img-wg4{
-                background-image: url(..//img/carcassomme-rent.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height:100px;
-              }
-              #img-wg5{
-                background-image: url(..//img/munich-rent.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height:100px;
-              }
-              #img-wg6{
-                background-image: url(..//img/italia-rent.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                height:100px;
-              }
+            .text-galeria{
+              display: grid;
+              padding-left: 10px;
+
+            }  
+            .img-wg:hover .text-galeria1, .img-wg:hover .text-galeria2 { 
+              color: #000000;
+            } 
+            .img-wg:hover .text-galeria1 { 
+              padding-left: 17px;
+            } 
+
+            .img-wg:hover .text-galeria{
+             display: grid;
+             padding-left: 10px;
+             background-image: url(../img/castillo.png);
+             background-repeat: no-repeat;
+             background-position-x: 5%;
+             background-position-y:10%;
+             background-color: #FFFFFF;
+            } 
+
+            #img-wg1{
+              background-image: url(../img/sale.jpg);
+              background-size: content;
+              background-repeat: no-repeat;
+              background-position: center;
+              min-height:100px;
+            } 
+            #img-wg2{
+              background-image: url(../img/England_sale.png);
+              background-size: content;
+              background-repeat: no-repeat;
+              background-position: center;
+              min-height:100px;
+            } 
+            #img-wg3{
+              background-image: url(../img/Marseilles_sale.jpg);
+              background-size: content;
+              background-repeat: no-repeat;
+              background-position: center;
+              min-height:100px;
+            }
+    .wg-content{
+      grid-column: 2/3;
+      text-align: right;
+      margin: 0% 5% 2% 0%;
+    }    
+      .vap-wg{
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+      }
+      .click-container{
+       display: grid;
+      }
+      .click{
+      font-family: 'Brandon Grotesque';
+      font-style: normal;
+      font-size: 25px;
+      align-items: center;
+      justify-content:center;
+      text-align:center;
+      color: black;
+      border-radius: 80px;;
+      border: 1px solid rgb(6, 0, 0);
+      padding: 0% 5% 0% 5%;
+      }
+
+      .click-container:hover .click{
+        background-color: #000000;
+        color: rgb(252, 248, 248);
+      }
+
+      .prev,.next{
+        display:flex;
+        padding-left:30%
+      }
+        #prev-text{
+          padding-top:7%
+        }
+        #next-text{
+          padding-top:7%;
+          padding-left:38%;
+          color: #df991b;
+        }
+
+       .info{
+        font-family: 'brandon-grotesque';
+        font-style: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: #000000;
+        margin-bottom: 5%;
+        margin-left: 8%;
+       }
+
     #Worldwide_gallery2{
       grid-row: 2/3;
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-top:2%;
     } 
+    #img-wg4{
+      background-image: url(..//img/carcassomme-rent.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height:100px;
+    }
+    #img-wg5{
+      background-image: url(..//img/munich-rent.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height:100px;
+    }
+    #img-wg6{
+      background-image: url(..//img/italia-rent.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height:100px;
+    }
 
     #Luxury-properties{
       grid-row: 3/4;
@@ -303,30 +378,37 @@
 .subtitulos1{
   font-family: 'PF Regal Display Pro';
   font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 25px;
   align-items: center;
   color: #DF991B;
+  margin:0%
 }
 
 .subtitulos2{
-  position: absolute;
   font-family: 'PF Regal Display Pro';
   font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 50px;
   align-items: center;
   color: #000000;
+  margin:0%
 }
 
-.click{
-font-family: 'Brandon Grotesque';
+
+.text-galeria1{
+  font-family: 'PF Regal Display Pro';
+  font-style: normal;
+  font-weight:30px;
+  font-size:20px;
+  align-items: center;
+  text-align: left; 
+  color: white;
+}
+.text-galeria2{
+font-family: 'PF Regal Display Pro';
 font-style: normal;
-font-weight: 390;
 font-size: 25px;
-line-height: 45px;
-align-items: center;
-color: #DF991B;
+font-weight: bold;
+align-items: start;
+text-align: left;
+color: white;
 }
