@@ -407,7 +407,7 @@
       display: grid;
       width:max-content;
       grid-template-columns: repeat(4,1fr);
-      grid-template-rows: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
       align-content: center;
       align-items: center;
       margin:5% 0% 5% 10%;
@@ -444,8 +444,6 @@
       text-align: left;
       color: rgb(7, 7, 7);
       }
-
-      
 
       #img-lp1{
         background-image: url(../img/surfside.jpg);
@@ -506,8 +504,30 @@
 
     #services{
       grid-row: 4/5;
-      
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;   
     }
+     #img-contenedor{
+      display: grid;
+      grid-template-columns: 10% 60% 20%;
+      grid-template-rows: 10% 80% 10%;
+    }
+      #img-services{
+        background-color: #484545;
+        grid-column: 1/3;
+        grid-row: 1/4;
+        min-height:500px;
+
+      }
+      #img-f1{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        background-image: url(../img/services.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height:180px;
+      }
      
 .subtitulos1{
   font-family: 'PF Regal Display Pro';
