@@ -320,7 +320,6 @@
     .wg-content2{
       grid-column: 1/2;
       text-align: left;
-      /*margin: 0% 5% 2% 0%;*/
     }    
     .vap-wg2{
       display: grid;
@@ -332,13 +331,11 @@
     .click-container2{
      display: grid;
     }
-
     .click-container2:hover .click{
       background-color: #000000;
       color: rgb(252, 248, 248);
     }
-
-    .prev2,.next2{
+   .prev2,.next2{
       display:flex;
     }
       #prev2-text{
@@ -382,68 +379,131 @@
     #Luxury-properties{
       grid-row: 3/4;
       display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
- 
+      grid-template-rows: 5% 5% 1fr;
+      align-items: center;
     }
+        .subtitulos1-lp{
+          font-family: 'PF Regal Display Pro';
+          font-style: normal;
+          font-size: 25px;
+          align-items: center;
+          text-align: center;
+          color: #DF991B;
+          margin:0%
+        }
+        
+        .subtitulos2-lp{
+          font-family: 'PF Regal Display Pro';
+          font-style: normal;
+          font-size: 50px;
+          align-items: center;
+          text-align: center;
+          color: #000000;
+          margin:0%
+        }
     
-      .galeria-lp{
-        grid-row: 3/4;
+    .galeria-lp{
+      grid-row: 3/4;
+      display: grid;
+      width:max-content;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(4,1fr);
+      align-content: center;
+      align-items: center;
+      margin:5% 0% 5% 10%;
+      grid-gap:2%;   
+    }
+      .img-lp{
         display: grid;
-        width:max-content;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr);   
+        align-items: end;
       }
+        .text-glp{
+          display: grid;
+          padding-left: 12px;
+          justify-content: start;
+          background-color: #FFFFFF;
+        }  
+      .textlp-galeria1{
+        font-family: 'PF Regal Display Pro';
+        font-style: normal;
+        font-weight:30px;
+        font-size:20px;
+        align-items: center;
+        text-align: left; 
+        color: rgb(11, 10, 10);
+      }
+      .textlp-galeria2{
+      font-family: 'PF Regal Display Pro';
+      font-style: normal;
+      font-size: 25px;
+      font-weight: bold;
+      align-items: start;
+      text-align: left;
+      color: rgb(7, 7, 7);
+      }
+
+      
+
       #img-lp1{
         background-image: url(../img/surfside.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       } 
       #img-lp2{
         background-image: url(../img/vero.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       } 
       #img-lp3{
         background-image: url(../img/bahama.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       }
       #img-lp4{
         background-image: url(..//img/brickell.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       }
       #img-lp5{
         background-image: url(..//img/coral.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       }
       #img-lp6{
         background-image: url(..//img/miami.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       }
       #img-lp7{
         background-image: url(..//img/Developments-quebec.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       }
       #img-lp8{
         background-image: url(..//img/Developments.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        min-height:200px;
       }
 
     #services{
       grid-row: 4/5;
+      
     }
      
 .subtitulos1{
