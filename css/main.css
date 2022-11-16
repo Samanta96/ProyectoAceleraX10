@@ -205,7 +205,7 @@
 
             #img-wg1{
               background-image: url(../img/sale.jpg);
-              background-size: content;
+              background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
               min-height:100px;
@@ -286,26 +286,115 @@
       grid-template-columns: 1fr 1fr;
       margin-top:2%;
     } 
+   /* .galeria{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 1fr;
+      width:100%;    
+  }
+    .img-wg{
+          display: grid;
+          align-items: end;
+          margin-right: 3%;   
+        }
+          .text-galeria{
+            display: grid;
+            padding-left: 10px;
+
+          }  
+          .img-wg:hover .text-galeria1, .img-wg:hover .text-galeria2 { 
+            color: #000000;
+          } 
+          .img-wg:hover .text-galeria1 { 
+            padding-left: 17px;
+          } 
+
+          .img-wg:hover .text-galeria{
+           display: grid;
+           padding-left: 10px;
+           background-image: url(../img/castillo.png);
+           background-repeat: no-repeat;
+           background-position-x: 5%;
+           background-position-y:10%;
+           background-color: #FFFFFF;
+          } 
+
+  .wg-content{
+    grid-column: 2/3;
+    text-align: right;
+    margin: 0% 5% 2% 0%;
+  }    
+    .vap-wg{
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+    }
+    .click-container{
+     display: grid;
+    }
+    .click{
+    font-family: 'Brandon Grotesque';
+    font-style: normal;
+    font-size: 25px;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    color: black;
+    border-radius: 80px;;
+    border: 1px solid rgb(6, 0, 0);
+    padding: 0% 5% 0% 5%;
+    }
+
+    .click-container:hover .click{
+      background-color: #000000;
+      color: rgb(252, 248, 248);
+    }
+
+    .prev,.next{
+      display:flex;
+      padding-left:30%
+    }
+      #prev-text{
+        padding-top:7%
+      }
+      #next-text{
+        padding-top:7%;
+        padding-left:38%;
+        color: #df991b;
+      }
+
+     .info{
+      font-family: 'brandon-grotesque';
+      font-style: normal;
+      font-size: 22px;
+      line-height: 35px;
+      color: #000000;
+      margin-bottom: 5%;
+      margin-left: 8%;
+     }*/
+
     #img-wg4{
       background-image: url(..//img/carcassomme-rent.jpg);
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height:100px;
+      min-height:100px;
     }
     #img-wg5{
       background-image: url(..//img/munich-rent.jpg);
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height:100px;
+      min-height:100px;
     }
     #img-wg6{
       background-image: url(..//img/italia-rent.jpg);
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      height:100px;
+      min-height:150px;
     }
 
     #Luxury-properties{
