@@ -172,7 +172,7 @@
   }
     .galeria{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         width:100%;    
     }
@@ -184,7 +184,6 @@
             .text-galeria{
               display: grid;
               padding-left: 10px;
-
             }  
             .img-wg:hover .text-galeria1, .img-wg:hover .text-galeria2 { 
               color: #000000;
@@ -212,14 +211,14 @@
             } 
             #img-wg2{
               background-image: url(../img/England_sale.png);
-              background-size: content;
+              background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
               min-height:100px;
             } 
             #img-wg3{
               background-image: url(../img/Marseilles_sale.jpg);
-              background-size: content;
+              background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
               min-height:100px;
@@ -284,32 +283,32 @@
       grid-row: 2/3;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin-top:2%;
+      margin:4% 0% 5% 4%;
     } 
-   /* .galeria{
+   .galeria2{
       display: grid;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      width:100%;    
+      width: 100%;
   }
-    .img-wg{
+    .img2-wg{
           display: grid;
           align-items: end;
-          margin-right: 3%;   
+          background-position: center; 
+          margin-left: 3%;
         }
-          .text-galeria{
+          .text-galeria-wg2{
             display: grid;
-            padding-left: 10px;
-
+            padding-left: 12px;
           }  
-          .img-wg:hover .text-galeria1, .img-wg:hover .text-galeria2 { 
+          .img2-wg:hover .text-galeria1, .img2-wg:hover .text-galeria2 { 
             color: #000000;
           } 
-          .img-wg:hover .text-galeria1 { 
+          .img2-wg:hover .text-galeria1 { 
             padding-left: 17px;
           } 
 
-          .img-wg:hover .text-galeria{
+          .img2-wg:hover .text-galeria-wg2{
            display: grid;
            padding-left: 10px;
            background-image: url(../img/castillo.png);
@@ -319,7 +318,7 @@
            background-color: #FFFFFF;
           } 
 
-  .wg-content{
+ /* .wg-content{
     grid-column: 2/3;
     text-align: right;
     margin: 0% 5% 2% 0%;
@@ -377,24 +376,21 @@
 
     #img-wg4{
       background-image: url(..//img/carcassomme-rent.jpg);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
       min-height:100px;
     }
     #img-wg5{
       background-image: url(..//img/munich-rent.jpg);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
       min-height:100px;
     }
     #img-wg6{
       background-image: url(..//img/italia-rent.jpg);
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
-      min-height:150px;
+      min-height:100px;
     }
 
     #Luxury-properties{
