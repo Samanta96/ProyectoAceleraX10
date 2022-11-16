@@ -417,6 +417,9 @@
         display: grid;
         align-items: end;
       }
+        .img-lp:hover{
+          border: 1px solid rgb(147, 7, 172);
+        }
         .text-glp{
           display: grid;
           padding-left: 12px;
