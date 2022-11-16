@@ -279,58 +279,58 @@
         margin-left: 8%;
        }
 
-    #Worldwide_gallery2{
-      grid-row: 2/3;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin:4% 0% 5% 4%;
-    } 
+  #Worldwide_gallery2{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:4% 0% 5% 4%;
+  } 
    .galeria2{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
       width: 100%;
-  }
-    .img2-wg{
-          display: grid;
-          align-items: end;
-          background-position: center; 
-          margin-left: 3%;
-        }
-          .text-galeria-wg2{
+    }
+      .img2-wg{
             display: grid;
-            padding-left: 12px;
-          }  
-          .img2-wg:hover .text-galeria1, .img2-wg:hover .text-galeria2 { 
-            color: #000000;
-          } 
-          .img2-wg:hover .text-galeria1 { 
-            padding-left: 17px;
-          } 
+            align-items: end;
+            background-position: center; 
+            margin-left: 3%;
+          }
+            .text-galeria-wg2{
+              display: grid;
+              padding-left: 12px;
+            }  
+            .img2-wg:hover .text-galeria1, .img2-wg:hover .text-galeria2 { 
+              color: #000000;
+            } 
+            .img2-wg:hover .text-galeria1 { 
+              padding-left: 17px;
+            } 
 
-          .img2-wg:hover .text-galeria-wg2{
-           display: grid;
-           padding-left: 10px;
-           background-image: url(../img/castillo.png);
-           background-repeat: no-repeat;
-           background-position-x: 5%;
-           background-position-y:10%;
-           background-color: #FFFFFF;
-          } 
+            .img2-wg:hover .text-galeria-wg2{
+            display: grid;
+            padding-left: 10px;
+            background-image: url(../img/castillo.png);
+            background-repeat: no-repeat;
+            background-position-x: 5%;
+            background-position-y:10%;
+            background-color: #FFFFFF;
+            } 
 
- /* .wg-content{
-    grid-column: 2/3;
-    text-align: right;
-    margin: 0% 5% 2% 0%;
-  }    
-    .vap-wg{
+    .wg-content2{
+      grid-column: 1/2;
+      text-align: left;
+      /*margin: 0% 5% 2% 0%;*/
+    }    
+    .vap-wg2{
       display: grid;
       position: relative;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-rows: 1fr;
       align-items: center;
     }
-    .click-container{
+    .click-container2{
      display: grid;
     }
     .click{
@@ -345,7 +345,7 @@
     border: 1px solid rgb(6, 0, 0);
     padding: 0% 5% 0% 5%;
     }
-
+/*
     .click-container:hover .click{
       background-color: #000000;
       color: rgb(252, 248, 248);
@@ -362,17 +362,17 @@
         padding-top:7%;
         padding-left:38%;
         color: #df991b;
-      }
+      }*/
 
-     .info{
+     .info2{
       font-family: 'brandon-grotesque';
       font-style: normal;
       font-size: 22px;
       line-height: 35px;
       color: #000000;
       margin-bottom: 5%;
-      margin-left: 8%;
-     }*/
+      margin-right: 8%;
+     }
 
     #img-wg4{
       background-image: url(..//img/carcassomme-rent.jpg);
