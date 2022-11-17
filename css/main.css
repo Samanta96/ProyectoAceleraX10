@@ -723,3 +723,49 @@ align-items: start;
 text-align: left;
 color: white;
 }
+@media only screen and (max-width: 768px){
+  #Worldwide_gallery{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+    #Worldwide_gallery .galeria{
+      grid-row: 2/3;
+      grid-column: 1/-1; 
+      margin:2%;
+      max-width: 60%;
+    }
+    #Worldwide_gallery .wg-content{
+      grid-row: 1/2;
+      grid-column:1/-1;
+      align-items: center;
+      text-align: justify;
+      margin:2%;
+      max-width: 60%;
+    }
+    .info{
+      padding-left: 0%;
+      text-align: justify;
+    }
+  #Worldwide_gallery2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+    #Worldwide_gallery2 .galeria{
+      grid-row: 2/3;
+      grid-column: 1/-1; 
+      margin:2%;
+      max-width: 60%;
+    }
+    #Worldwide_gallery2 .wg-content2{
+      grid-row: 1/2;
+      grid-column:1/-1;
+      align-items: center;
+      text-align: justify;
+      margin:2%;
+      max-width: 60%;
+    }
+    .info2{
+      padding-left: 0%;
+      text-align: justify;
+    }
+}
