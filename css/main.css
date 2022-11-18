@@ -730,7 +730,7 @@ color: white;
 
 @media only screen and (max-width: 428px){
   #encabezado{
-    height: 200vh;
+    height: 325vh;
     width: 300vw;
     margin: 0%;
   } 
@@ -774,6 +774,7 @@ color: white;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       margin-top: 5%;
+      height: 80%;
     }
 
       #caja_texto {
