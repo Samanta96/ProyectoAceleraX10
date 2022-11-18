@@ -18,6 +18,9 @@
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
     height: 50px;
   }
+  #logo{
+    display:none;
+  }
     .head_top #logo-letra{
       grid-column: 1/2;
       position: relative;
@@ -723,35 +726,661 @@ align-items: start;
 text-align: left;
 color: white;
 }
-@media only screen and (max-width: 768px){
+
+
+@media only screen and (max-width: 428px){
   #encabezado{
-    height: 200vw;
-    width: 200vw;
+    height: 200vh;
+    width: 300vw;
+    margin: 0%;
   } 
+        #uniq,#luxury {
+          display:none;
+        }    
+      .head_top #sesion{
+        display:none;
+        grid-template-columns: 1fr 05fr 3fr;
+      }
+        #sesion_conteiner{
+          display: none;
+        }
+          #login , #sigin{
+            display: none;
+          }
+      .head_top{
+        grid-template-columns: 1fr 1fr;
+        height:100%;
+        justify-items: start;
+      }
+      #logo{
+        display: block;
+        position:relative;
+        grid-column: 1/2;
+        height:90%;
+        padding:8% 0% 0% 20%;
+      }
+      .head_top #menu{
+        grid-column: 2/3;
+        display: grid;
+        position: relative;
+        height: 230%;
+        border: 0px;
+        left: 70%;
+        margin-bottom: 2%;
+        bottom:80%;
+      }
+      
+    .search{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin-top: 5%;
+    }
+
+      #caja_texto {
+        grid-column: 1/-1; 
+        margin: 1% 10% 10% 10%;  
+      }
+      #lupa{
+        grid-column: 1/-1;
+        position: relative;
+        left: 80%;
+        height:30%;
+      }
+
+      .titulos_encabezado{
+        grid-row: 4/5;
+      }
+  
+      #titulo1{
+        font-size: 500%;
+        margin-top:0%
+      }
+      #titulo2{  
+        margin: 5%;
+        font-size: 1000%;
+      }
+      #enlace_head{
+        grid-column:1/-1;
+        margin-left:5%;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr; 
+        margin-top: 20%; 
+        }
+  
+  #content{
+    width: 300vw;
+  }   
+
   #Worldwide_gallery{
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  }
-    #Worldwide_gallery .galeria{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 300vw;
+}
+#Worldwide_gallery .galeria{
+  grid-row: 2/3;
+  grid-column: 1/-1; 
+  margin:2%;
+  width: 200vw;
+}
+#Worldwide_gallery .wg-content{
+  grid-row: 1/2;
+  grid-column:1/-1;
+  align-items: center;
+  text-align: justify;
+  margin:2%;
+  width: 300vw;
+}
+.info{
+  padding-left: 0%;
+  margin-left:0% ;
+  text-align: justify;
+  font-size: 200%;
+  padding-bottom: 5%;
+}
+
+/* 
+      .galeria{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          width:100%;    
+      }
+        .img-wg{
+              display: grid;
+              align-items: end;
+              margin-right: 3%;   
+            }
+              .text-galeria{
+                display: grid;
+                padding-left: 10px;
+              }  
+              .img-wg:hover .text-galeria1, .img-wg:hover .text-galeria2 { 
+                color: #000000;
+              } 
+              .img-wg:hover .text-galeria1 { 
+                padding-left: 17px;
+              } 
+  
+              .img-wg:hover .text-galeria{
+               display: grid;
+               padding-left: 10px;
+               background-image: url(../img/castillo.png);
+               background-repeat: no-repeat;
+               background-position-x: 5%;
+               background-position-y:10%;
+               background-color: #FFFFFF;
+              } 
+  
+              #img-wg1{
+                background-image: url(../img/sale.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height:100px;
+              } 
+              #img-wg2{
+                background-image: url(../img/England_sale.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height:100px;
+              } 
+              #img-wg3{
+                background-image: url(../img/Marseilles_sale.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                min-height:100px;
+              }
+       
+        .vap-wg{
+          display: grid;
+          position: relative;
+          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-rows: 1fr;
+          align-items: center;
+        }
+        .click-container{
+         display: grid;
+        }
+        .click{
+        font-family: 'Brandon Grotesque';
+        font-style: normal;
+        font-size: 25px;
+        align-items: center;
+        justify-content:center;
+        text-align:center;
+        color: black;
+        border-radius: 80px;;
+        border: 1px solid rgb(6, 0, 0);
+        padding: 0% 5% 0% 5%;
+        }
+  
+        .click-container:hover .click{
+          background-color: #000000;
+          color: rgb(252, 248, 248);
+        }
+  
+        .prev,.next{
+          display:flex;
+          padding-left:30%
+        }
+          #prev-text{
+            padding-top:7%
+          }
+          #next-text{
+            padding-top:7%;
+            padding-left:38%;
+            color: #df991b;
+          }
+  
+  
+    #Worldwide_gallery2{
       grid-row: 2/3;
-      grid-column: 1/-1; 
-      margin:2%;
-      max-width: 100vmax;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin:4% 0% 5% 4%;
+    } 
+     .galeria2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+      }
+        .img2-wg{
+              display: grid;
+              align-items: end;
+              background-position: center; 
+              margin-left: 3%;
+            }
+              .text-galeria-wg2{
+                display: grid;
+                padding-left: 12px;
+              }  
+              .img2-wg:hover .text-galeria1, .img2-wg:hover .text-galeria2 { 
+                color: #000000;
+              } 
+              .img2-wg:hover .text-galeria1 { 
+                padding-left: 17px;
+              } 
+  
+              .img2-wg:hover .text-galeria-wg2{
+              display: grid;
+              padding-left: 10px;
+              background-image: url(../img/castillo.png);
+              background-repeat: no-repeat;
+              background-position-x: 5%;
+              background-position-y:10%;
+              background-color: #FFFFFF;
+              } 
+      .wg-content2{
+        grid-column: 1/2;
+        text-align: left;
+      }    
+      .vap-wg2{
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+      }
+      .click-container2{
+       display: grid;
+      }
+      .click-container2:hover .click{
+        background-color: #000000;
+        color: rgb(252, 248, 248);
+      }
+     .prev2,.next2{
+        display:flex;
+      }
+        #prev2-text{
+          padding-top:5%
+        }
+        #next2-text{
+          padding-top:6%;
+          padding-left:38%;
+          color: #df991b;
+        }
+  
+       .info2{
+        font-family: 'brandon-grotesque';
+        font-style: normal;
+        font-size: 22px;
+        line-height: 35px;
+        color: #000000;
+        margin-bottom: 5%;
+        margin-right: 8%;
+       }
+  
+      #img-wg4{
+        background-image: url(..//img/carcassomme-rent.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:100px;
+      }
+      #img-wg5{
+        background-image: url(..//img/munich-rent.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:100px;
+      }
+      #img-wg6{
+        background-image: url(..//img/italia-rent.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height:100px;
+      }
+  
+      #Luxury-properties{
+        grid-row: 3/4;
+        display: grid;
+        grid-template-rows: 5% 5% 1fr;
+        align-items: center;
+      }
+          .subtitulos1-lp{
+            font-family: 'PF Regal Display Pro';
+            font-style: normal;
+            font-size: 25px;
+            align-items: center;
+            text-align: center;
+            color: #DF991B;
+            margin:0%
+          }
+          
+          .subtitulos2-lp{
+            font-family: 'PF Regal Display Pro';
+            font-style: normal;
+            font-size: 50px;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            margin:0%
+          }
+      
+      .galeria-lp{
+        grid-row: 3/4;
+        display: grid;
+        width:max-content;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-content: center;
+        align-items: center;
+        margin:5% 0% 5% 10%;
+        grid-gap:2%;   
+      }
+        .img-lp{
+          display: grid;
+          align-items: end;
+        }
+          .img-lp:hover{
+            border: 1px solid rgb(147, 7, 172);
+          }
+          .text-glp{
+            display: grid;
+            padding-left: 12px;
+            justify-content: start;
+            background-color: #FFFFFF;
+          }  
+        .textlp-galeria1{
+          font-family: 'PF Regal Display Pro';
+          font-style: normal;
+          font-weight:30px;
+          font-size:20px;
+          align-items: center;
+          text-align: left; 
+          color: rgb(11, 10, 10);
+        }
+        .textlp-galeria2{
+        font-family: 'PF Regal Display Pro';
+        font-style: normal;
+        font-size: 25px;
+        font-weight: bold;
+        align-items: start;
+        text-align: left;
+        color: rgb(7, 7, 7);
+        }
+  
+        #img-lp1{
+          background-image: url(../img/surfside.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        } 
+        #img-lp2{
+          background-image: url(../img/vero.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        } 
+        #img-lp3{
+          background-image: url(../img/bahama.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        }
+        #img-lp4{
+          background-image: url(..//img/brickell.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        }
+        #img-lp5{
+          background-image: url(..//img/coral.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        }
+        #img-lp6{
+          background-image: url(..//img/miami.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        }
+        #img-lp7{
+          background-image: url(..//img/Developments-quebec.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        }
+        #img-lp8{
+          background-image: url(..//img/Developments.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          min-height:200px;
+        }
+  
+      #services{
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;   
+      }
+       #img-contenedor{
+        display: grid;
+        grid-template-columns: 10% 60% 20%;
+        grid-template-rows: 10% 80% 10%;
+      }
+        #img-services{
+          background-color: #484545;
+          grid-column: 1/3;
+          grid-row: 1/4;
+          min-height:500px;
+  
+        }
+        #img-f1{
+          grid-column: 2/4;
+          grid-row: 2/3;
+          background-image: url(../img/services.jpg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          min-height:180px;
+        }
+    #s-content{
+      display: grid;
     }
-    #Worldwide_gallery .wg-content{
-      grid-row: 1/2;
-      grid-column:1/-1;
+       
+    #logo-services{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+  
+    #linea{
+      width:600px;
+      height:30px;
+      border-bottom: 1px solid #DF991B;
+      margin:0%;
+    }
+    .vap-lp{
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .click-containerlp{
+      margin:6% 0% 0% 0%;
+      padding:0% 0% 0% 0%;
+    }
+    .clicklp{
+    font-family: 'Brandon Grotesque';
+    font-style: normal;
+    font-size: 25px;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    color: black;
+    border-radius: 80px;
+    border: 1px solid rgb(6, 0, 0);
+    padding: 0% 12% 0% 12%;
+    }
+  
+    .click-containerlp:hover .clicklp{
+      background-color: #000000;
+      color: rgb(252, 248, 248);
+    }
+  
+    .prevlp,.nextlp{
+      display:flex;
       align-items: center;
-      text-align: justify;
-      margin:2%;
-      max-width: 150vw;
     }
-    .info{
-      padding-left: 0%;
-      margin-left:0% ;
-      text-align: justify;
-      padding-bottom: 5%;
+      #prevlp-text{
+        padding-top:8%;
+       
+      }
+      #nextlp-text{
+        padding-top:8%;
+        color: #df991b;
+      }
+  
+  #footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    margin-top: 5%;
+  }
+    #encabezado-footer{
+      background: #26282B;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 15px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5%;
+      padding: 2% 5%;
+      grid-row: 1/3;
+      grid-column: 1/3;
+      z-index: 999;
+      grid-template-rows: auto 1fr;
     }
+  
+      #formulario{
+        grid-row: 1/3;
+        grid-column: 2/3;
+        display: grid;
+      }
+  
+        #name{
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          color: #fff;
+          font-family: 'brandon-grotesque';
+        }
+        #correo{
+          padding-top: 0;
+          padding-bottom: 2px;
+          font-size: 16px;
+          color: #fff;
+          padding: 5px 210px 5px 15px;
+          background-color: transparent !important;
+          border-radius: 80px;
+          border: 1px solid #7E7E7E;
+        }
+  
+        .clickf{
+          background-color: unset;
+          color: #DF991B;
+          padding: 5px 30px;
+          border-radius: 100px !important;
+          letter-spacing: 3px;
+          border: 1px solid #DF991B;
+          font-size: 17px;
+          font-family: 'brandon-grotesque';
+          font-weight: 390;
+          text-align: center;
+          margin-left: 15vw;
+          margin-top: 1.5vw;
+        }
+  
+      .subtitulosf2{
+        font-family: 'PF Regal Display Pro';
+        font-style: normal;
+        font-size: 50px;
+        align-items: center;
+        color: #FFFFFF;
+        margin:0%
+      }
+  
+    #pie-pagina{
+      grid-row: 2/5;
+      grid-column: 1/3;
+      padding: 12% 0 0 0;
+      background-color: #000000;
+      display: grid;
+      grid-template-columns: repeat(4 1fr);
+      grid-row: auto 5%;
+      align-content: end;
+      padding:15% 5% 0% 5%;
+    }
+    
+    #textpp, #lista-1, #lista-2, #info1, #info2, #email, #Copyright{
+      color: #FFFFFF;
+     }
+  
+     #textpp{
+      padding-top: 5px;
+      line-height: 35px;
+     }
+    
+     #lista-1, #lista-2{
+      list-style: none;
+      line-height: 35px;
+     }
+    .Copyright{
+      grid-row: 2/3;
+      grid-column: 1/5;
+      text-align: center;
+      border-top: 1px solid white;
+    }
+  
+  .subtitulos1{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-size: 25px;
+    align-items: center;
+    color: #DF991B;
+    margin:0%
+  }
+  
+  .subtitulos2{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-size: 50px;
+    align-items: center;
+    color: #000000;
+    margin:0%
+  }
+  
+  
+  .text-galeria1{
+    font-family: 'PF Regal Display Pro';
+    font-style: normal;
+    font-weight:30px;
+    font-size:20px;
+    align-items: center;
+    text-align: left; 
+    color: white;
+  }
+  .text-galeria2{
+  font-family: 'PF Regal Display Pro';
+  font-style: normal;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: start;
+  text-align: left;
+  color: white;
+  }*/
+
+   
   #Worldwide_gallery2{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
