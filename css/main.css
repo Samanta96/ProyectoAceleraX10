@@ -805,9 +805,22 @@ color: white;
         margin-left:5%;
         grid-template-columns: 1fr;
         grid-template-rows:1fr; 
-        margin-top: 20%; 
+        margin-top: 2%; 
+        margin-bottom: 10%;
         }
-  
+        .vap{
+          height: 50%;
+          width: 65%;
+          font-size:200%;
+          text-align: center;
+          padding: 3% 4% 0% 4%;
+          margin: 0% 10% 8% 10%;
+        }
+        #flecha_head{
+          top:22%;
+          left:30%;
+          height: 18%;
+        }
   #content{
     width: 300vw;
   }   
