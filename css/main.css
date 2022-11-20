@@ -1,3 +1,6 @@
+.flecha-amarilla,.flecha-vap{
+  display:none;
+}
 #encabezado{
   display: grid;
   margin: 0%;
@@ -729,323 +732,194 @@ color: white;
 
 
 @media only screen and (max-width: 428px){
-  #encabezado{
-    height: 325vh;
-    width: 300vw;
-    margin: 0%;
-  } 
-        #uniq,#luxury {
-          display:none;
-        }    
-      .head_top #sesion{
-        display:none;
-        grid-template-columns: 1fr 05fr 3fr;
-      }
-        #sesion_conteiner{
-          display: none;
-        }
-          #login , #sigin{
-            display: none;
-          }
-      .head_top{
-        grid-template-columns: 1fr 1fr;
-        height:100%;
-        justify-items: start;
-      }
-      #logo{
-        display: block;
-        position:relative;
-        grid-column: 1/2;
-        height:90%;
-        padding:8% 0% 0% 20%;
-      }
-      .head_top #menu{
-        grid-column: 2/3;
-        display: grid;
-        position: relative;
-        height: 230%;
-        border: 0px;
-        left: 70%;
-        margin-bottom: 2%;
-        bottom:80%;
-      }
-      
-    .search{
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      margin-top: 5%;
-      height: 80%;
+  
+#encabezado{
+  height: 325vh;
+  width: 320vw;
+  margin: 0%;
+} 
+  #uniq,#luxury {
+      display:none;
+    }    
+  .head_top #sesion{
+    display:none;
+    grid-template-columns: 1fr 05fr 3fr;
+  }
+  #sesion_conteiner{
+    display: none;
+  }
+  #login , #sigin{
+    display: none;
+  }
+.head_top{
+  grid-template-columns: 1fr 1fr;
+  height:100%;
+  justify-items: start;
+}
+    #logo{
+      display: block;
+      position:relative;
+      grid-column: 1/2;
+      height:90%;
+      padding:8% 0% 0% 20%;
+    }
+    .head_top #menu{
+      grid-column: 2/3;
+      display: grid;
+      position: relative;
+      height: 230%;
+      border: 0px;
+      left: 70%;
+      margin-bottom: 2%;
+      bottom:80%;
+    }
+    
+  .search{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 5%;
+    height: 80%;
+  }
+
+    #caja_texto {
+      grid-column: 1/-1; 
+      margin: 1% 10% 10% 10%;  
+    }
+    #lupa{
+      grid-column: 1/-1;
+      position: relative;
+      left: 80%;
+      height:30%;
     }
 
-      #caja_texto {
-        grid-column: 1/-1; 
-        margin: 1% 10% 10% 10%;  
-      }
-      #lupa{
-        grid-column: 1/-1;
-        position: relative;
-        left: 80%;
-        height:30%;
-      }
+    .titulos_encabezado{
+      grid-row: 4/5;
+    }
 
-      .titulos_encabezado{
-        grid-row: 4/5;
+    #titulo1{
+      font-size: 500%;
+      margin-top:0%
+    }
+    #titulo2{  
+      margin: 5%;
+      font-size: 1000%;
+    }
+    #enlace_head{
+      grid-column:1/-1;
+      margin-left:5%;
+      grid-template-columns: 1fr;
+      grid-template-rows:1fr; 
+      margin-top: 2%; 
+      margin-bottom: 10%;
       }
-  
-      #titulo1{
-        font-size: 500%;
-        margin-top:0%
+      .vap{
+        height: 50%;
+        width: 65%;
+        font-size:200%;
+        text-align: center;
+        padding: 3% 4% 0% 4%;
+        margin: 0% 10% 8% 10%;
       }
-      #titulo2{  
-        margin: 5%;
-        font-size: 1000%;
+      #flecha_head{
+        top:22%;
+        left:30%;
+        height: 18%;
       }
-      #enlace_head{
-        grid-column:1/-1;
-        margin-left:5%;
-        grid-template-columns: 1fr;
-        grid-template-rows:1fr; 
-        margin-top: 2%; 
-        margin-bottom: 10%;
-        }
-        .vap{
-          height: 50%;
-          width: 65%;
-          font-size:200%;
-          text-align: center;
-          padding: 3% 4% 0% 4%;
-          margin: 0% 10% 8% 10%;
-        }
-        #flecha_head{
-          top:22%;
-          left:30%;
-          height: 18%;
-        }
   #content{
-    width: 300vw;
+    width: 320vw;
   }   
 
-  #Worldwide_gallery{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 300vw;
-}
-#Worldwide_gallery .galeria{
-  grid-row: 2/3;
-  grid-column: 1/-1; 
-  margin:2%;
-  width: 200vw;
-}
-#Worldwide_gallery .wg-content{
-  grid-row: 1/2;
-  grid-column:1/-1;
-  align-items: center;
-  text-align: justify;
-  margin:2%;
-  width: 300vw;
-}
-.info{
-  padding-left: 0%;
-  margin-left:0% ;
-  text-align: justify;
-  font-size: 200%;
-  padding-bottom: 5%;
-}
-
-/* 
-      .galeria{
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr;
-          width:100%;    
-      }
-        .img-wg{
-              display: grid;
-              align-items: end;
-              margin-right: 3%;   
-            }
-              .text-galeria{
-                display: grid;
-                padding-left: 10px;
-              }  
-              .img-wg:hover .text-galeria1, .img-wg:hover .text-galeria2 { 
-                color: #000000;
-              } 
-              .img-wg:hover .text-galeria1 { 
-                padding-left: 17px;
-              } 
-  
-              .img-wg:hover .text-galeria{
-               display: grid;
-               padding-left: 10px;
-               background-image: url(../img/castillo.png);
-               background-repeat: no-repeat;
-               background-position-x: 5%;
-               background-position-y:10%;
-               background-color: #FFFFFF;
-              } 
-  
-              #img-wg1{
-                background-image: url(../img/sale.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                min-height:100px;
-              } 
-              #img-wg2{
-                background-image: url(../img/England_sale.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                min-height:100px;
-              } 
-              #img-wg3{
-                background-image: url(../img/Marseilles_sale.jpg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                min-height:100px;
-              }
-       
+    #Worldwide_gallery{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 320vw;
+    }
+        #Worldwide_gallery .galeria{
+        grid-row: 2/3;
+        grid-column: 1/-1; 
+        margin:2%;
+        width: 300vw;
+        }
+        #Worldwide_gallery .wg-content{
+        grid-row: 1/2;
+        grid-column:1/-1;
+        text-align: justify;
+        margin:2%;
+        width: 300vw;
+        }
+        .info{
+        padding-left: 0%;
+        margin-left:2% ;
+        text-align: justify;
+        line-height: 70px;
+        font-size: 290%;
+        padding-bottom: 5%;
+        }
         .vap-wg{
           display: grid;
           position: relative;
-          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-columns: 0.5fr 5fr;
           grid-template-rows: 1fr;
-          align-items: center;
         }
         .click-container{
-         display: grid;
-        }
+          grid-column: 2/3;
+          }
         .click{
-        font-family: 'Brandon Grotesque';
-        font-style: normal;
-        font-size: 25px;
-        align-items: center;
-        justify-content:center;
-        text-align:center;
-        color: black;
-        border-radius: 80px;;
-        border: 1px solid rgb(6, 0, 0);
-        padding: 0% 5% 0% 5%;
+        font-size: 250%;
+        color: #DF991B;
+        border-radius:0px;
+        border: 0px;
+        padding: 0% 5% 0% 0%;
+        text-align: start;
+        margin: 0%;
         }
-  
-        .click-container:hover .click{
-          background-color: #000000;
-          color: rgb(252, 248, 248);
+        .prev,.next,#prev-text,#next-text{
+          display:none;
         }
-  
-        .prev,.next{
-          display:flex;
-          padding-left:30%
+        .flecha-amarilla{
+        grid-column:1/2;
+        grid-row: 1/1;
+        display:block;
         }
-          #prev-text{
-            padding-top:7%
-          }
-          #next-text{
-            padding-top:7%;
-            padding-left:38%;
-            color: #df991b;
-          }
-  
-  
-    #Worldwide_gallery2{
+        .flecha-vap{
+          display:block;
+          width: 30%;
+          margin-left: 30%;
+          margin-bottom: 5%;
+          padding: 0%;
+        }
+  #Worldwide_gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 320vw;
+  }
+        
+    #Worldwide_gallery2 .galeria2{
       grid-row: 2/3;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin:4% 0% 5% 4%;
-    } 
-     .galeria2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        width: 100%;
-      }
-        .img2-wg{
-              display: grid;
-              align-items: end;
-              background-position: center; 
-              margin-left: 3%;
-            }
-              .text-galeria-wg2{
-                display: grid;
-                padding-left: 12px;
-              }  
-              .img2-wg:hover .text-galeria1, .img2-wg:hover .text-galeria2 { 
-                color: #000000;
-              } 
-              .img2-wg:hover .text-galeria1 { 
-                padding-left: 17px;
-              } 
-  
-              .img2-wg:hover .text-galeria-wg2{
-              display: grid;
-              padding-left: 10px;
-              background-image: url(../img/castillo.png);
-              background-repeat: no-repeat;
-              background-position-x: 5%;
-              background-position-y:10%;
-              background-color: #FFFFFF;
-              } 
-      .wg-content2{
-        grid-column: 1/2;
-        text-align: left;
-      }    
-      .vap-wg2{
-        display: grid;
-        position: relative;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-      }
-      .click-container2{
-       display: grid;
-      }
-      .click-container2:hover .click{
-        background-color: #000000;
-        color: rgb(252, 248, 248);
-      }
-     .prev2,.next2{
-        display:flex;
-      }
-        #prev2-text{
-          padding-top:5%
+      grid-column: 1/-1; 
+      margin:2%;
+      width: 300vw;
+    }
+    #Worldwide_gallery2 .wg-content2{
+      grid-row: 1/2;
+      grid-column:1/-1;
+      text-align: justify;
+      margin:2%;
+      width: 300vw;
+    }
+
+    .info2{
+      padding-left: 0%;
+      margin-left:2% ;
+      text-align: justify;
+      line-height: 70px;
+      font-size: 290%;
+      padding-bottom: 5%;
+    }
+        .prev2,.next2,#prev2-text, #next2-text{
+          display:none;
         }
-        #next2-text{
-          padding-top:6%;
-          padding-left:38%;
-          color: #df991b;
-        }
-  
-       .info2{
-        font-family: 'brandon-grotesque';
-        font-style: normal;
-        font-size: 22px;
-        line-height: 35px;
-        color: #000000;
-        margin-bottom: 5%;
-        margin-right: 8%;
-       }
-  
-      #img-wg4{
-        background-image: url(..//img/carcassomme-rent.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height:100px;
-      }
-      #img-wg5{
-        background-image: url(..//img/munich-rent.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height:100px;
-      }
-      #img-wg6{
-        background-image: url(..//img/italia-rent.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height:100px;
-      }
-  
+  /* 
       #Luxury-properties{
         grid-row: 3/4;
         display: grid;
@@ -1355,26 +1229,18 @@ color: white;
       text-align: center;
       border-top: 1px solid white;
     }
-  
+  */
   .subtitulos1{
-    font-family: 'PF Regal Display Pro';
-    font-style: normal;
-    font-size: 25px;
-    align-items: center;
-    color: #DF991B;
-    margin:0%
+    font-size: 50px;
+    margin:2%;
   }
   
   .subtitulos2{
-    font-family: 'PF Regal Display Pro';
-    font-style: normal;
-    font-size: 50px;
-    align-items: center;
-    color: #000000;
-    margin:0%
+    font-size: 70px;
+    margin:2%;
   }
   
-  
+  /*
   .text-galeria1{
     font-family: 'PF Regal Display Pro';
     font-style: normal;
@@ -1398,25 +1264,9 @@ color: white;
   #Worldwide_gallery2{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 320%;
   }
-    #Worldwide_gallery2 .galeria2{
-      grid-row: 2/3;
-      grid-column: 1/-1; 
-      margin:2%;
-      max-width: 150vw;
-    }
-    #Worldwide_gallery2 .wg-content2{
-      grid-row: 1/2;
-      grid-column:1/-1;
-      align-items: center;
-      text-align: justify;
-      margin:2%;
-      max-width: 150vw;
-    }
-    .info2{
-      padding-left: 0%;
-      text-align: justify;
-    }
+    
     #Luxury-properties{
       grid-template-rows: 5% 5% 1fr;
     }
